@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first project with tailwind</title>
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-slate-50 min-h-screen px-4">
+    <header class="max-w-4xl mx-auto pt-7">
+        <section class="flex justify-between items-center">
+            <img src="./img/logo.svg" alt="logo">
+            <div>
+                <button class="text-4xl text-black sm:hidden">&#9776;</button>
+                <nav class="hidden sm:block  space-x-8">
+                    <a href="#" class="active:text-[hsl(5,85%,63%)]">Home</a>
+                    <a href="#" class="active:text-[hsl(5,85%,63%)]">New</a>
+                    <a href="#" class="active:text-[hsl(5,85%,63%)]">Popular</a>
+                    <a href="#" class="active:text-[hsl(5,85%,63%)]">Trending</a>
+                    <a href="#" class="active:text-[hsl(5,85%,63%)]">Categories</a>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main class="max-w-4xl mx-auto mt-6 flex flex-col gap 5">
+        <section class="flex flex-col sm:flex-row justify-between gap-3">
+            <article class="basis-3/5">
+                <div>
+                    <img src="./img/image-web-3-mobile.jpg" alt="hero" class="sm:hidden">
+                    <img src="./img/image-web-3-desktop.jpg" alt="hero" class="hidden sm:block">
+                </div>
+                <div class="flex flex-col sm:flex-row gap-7 mt-7">
+                    <h1 class="font-bold text-5xl">
+                        The Bright Future of Web 3.0?
+                    </h1>
+                    <p class="flex flex-col gap-8 sm:flex sm:flex-col justify-between text-sm/5 ">
+                        We dive into the evolution of the web that claims to put the power of the platform back into the hands of the people. But  is it  really fulfilling its promise.?
+                    
+                        <button class="bg-[hsl(5,85%,63%)] text-white  font-medium active:bg-black py-3 w-3/5 -mt-6">
+                            READ MORE
+                        </button>  
+                    </p>
+                </div>
+            </article>
+
+            <article  class="bg-black text-white py-4 px-6 basis-1/3">
+                <h2 class="text-[hsl(35,77%,62%)] text-3xl font-bold mt-3 mb-5">
+                    New
+                </h2>
+
+                <div class="my-5">
+                    <h3 class="active:text-[hsl(35,77%,62%)] font-bold cursor-pointer mt-2 mb-2">
+                       Hydrogen VS Electric Cars 
+                    </h3>
+                    <p class="text-xs/5">
+                        Will hydrogen-fueled cars ever catch upnto EVs?
+                    </p>
+                </div>
+                <hr class="my-3">
+                <div class="my-5">
+                    <h3 class="active:text-[hsl(35,77%,62%)] font-bold cursor-pointer mt-2 mb-2">
+                       The Downsides of AI Artistry 
+                    </h3>
+                    <p class="text-xs/5">
+                        What are the possible adverse effects of on-demand AI image generation?
+                    </p>
+                </div>
+                <hr class="my-3">
+                <div class="my-5">
+                    <h3 class="active:text-[hsl(35,77%,62%)] font-bold cursor-pointer mt-2 mb-2">
+                       Is VC Funding Drying Up? 
+                    </h3>
+                    <p class="text-xs/5">
+                       Private funding by VC firms is down by 50% YOY. We take a look at what that means.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section class="flex flex-col sm:flex-row justify-between gap-6 mt-8 pb-5">
+            <div class="flex gap-3">
+                <img src="./img/image-retro-pcs.jpg" alt="retro pc" class="w-24 h-24">
+                <div class="flex flex-col">
+                    <h2 class="text-[hsl(5,85%,63%)] text-xl font-bold">
+                        01
+                    </h2>
+                    <p class="font-bold active:text-[hsl(5,85%,63%)] cursor-pointer text-sm">
+                        Recieving Retro PCs
+                    </p>
+                    <p class="text-xs/5">
+                        what happens when old pcs are given mordern upgrades?
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="flex gap-3">
+                <img src="./img/image-top-laptops.jpg" alt="laptop pc" class="w-24 h-24">
+                <div class="flex flex-col">
+                    <h2 class="text-[hsl(5,85%,63%)] text-xl font-bold">
+                        02
+                    </h2>
+                    <p class="font-bold active:text-[hsl(5,85%,63%)] cursor-pointer text-sm">
+                        Top 10 Laptops or 2022
+                    </p>
+                    <p class="text-xs/5">
+                       Our best picks for various needs and budgets.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="flex gap-3">
+                <img src="./img/image-gaming-growth.jpg" alt="gaming" class="w-24 h-24">
+                <div class="flex flex-col">
+                    <h2 class="text-[hsl(5,85%,63%)] text-xl font-bold">
+                        03
+                    </h2>
+                    <p class="font-bold active:text-[hsl(5,85%,63%)] cursor-pointer text-sm">
+                        The Growth of Gaming
+                    </p>
+                    <p class="text-xs/5">
+                        How the pandemic has spark fresh oppurtunities.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
